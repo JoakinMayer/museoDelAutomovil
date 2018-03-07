@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #01497e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2354aaca' fill-opacity='0.19' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    color: white;
+}
+.portada{
+    position: relative;
+    height: 100vh;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#cffdfe,#54aaca,#002642); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#cffdfe,#54aaca,#002642); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#cffdfe,#54aaca,#002642); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#cffdfe,#54aaca,#002642); /* Standard syntax */
+}
+
+.portada img{
+    margin: 0 auto;
+    max-width: 80vh;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.portada h1{
+    width: 100%;
+    text-align: center;
+    margin: 0px auto 20px auto;
+    padding-top: 20px;
+    color: white;
+}
+
+section{
+    width: 90%;
+    padding: 5%;
+    position: relative;
+    overflow: hidden;
+}
+section h2{
+    margin: 15px 0 15px 0;
+    width: 100%;
+    text-align: center;
+}
+section div{
+    column-count: 1;
+    text-align: justify;
+    width: 100%;
+    margin-top: 15px;
+}
+div:nth-of-type(2) img{
+    width: 100%;
+}
+section:nth-of-type(2) h2{
+    margin-top: 35px;
+}
+section table{
+    color: black;
+    background-color: white;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section td, section th {
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+section tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#car{
+    position: absolute;
+    width: 20%;
+    left: -20%;
+    -webkit-animation: moverMoto 10s linear 0s infinite;
+    -moz-animation: moverMoto 10s linear 0s infinite;
+    -o-animation: moverMoto 10s linear 0s infinite;
+    animation: moverMoto 10s linear 0s infinite;
+}
+@-webkit-keyframes moverMoto{
+    0%{left: -20%;}
+    30%{left: 120%; 
+        -webkit-transform: scale(1);}
+    31%{
+        -webkit-transform: scaleX(-1);}
+    100%{left: -20%;   
+
+         -webkit-transform: scaleX(-1);}
+
+}
+
+video{
+    width: 100%;
+}
+
+section ul{
+    margin: 25px 0 25px 0;
+    list-style: inside;
+}
+div:nth-of-type(3) img{
+    width: 100%;
+}
+
+form{
+    width: 90%;
+    margin: 0 auto;
+}
+form h3{
+    text-align: center;
+    margin: 25px auto 25px auto;
+}
+form label{
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+form input[type="text"],form input[type="email"],form input[type="password"],form select, textarea{
+    display: block;
+    width: 100%;
+}
+form p{
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+form input[type="checkbox"]{
+    margin-top: 15px;
+
+}
+form input[type="submit"]{
+    margin: 15px 0 15px 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #54aaca;
+    color: white;
+    border: none;
+}
+form input:focus, form select:focus, textarea:focus{
+    outline: 1px solid #54aaca;
+}
+
+@media screen and (min-width: 767px) {
+    .portada h1 {
+        position: absolute;
+        text-align: right;
+        top: 25%;
+        width: 85%;
+        /* text-align: center; */
+        margin: 0px auto 20px auto;
+        padding-top: 22px;
+        color: white;
+    font-size: 2.5em;}
+
+    section div{
+        column-count: 2;
+    }
+    section:nth-of-type(2) h2{
+        margin-top: 45px;
+    }
+    section:nth-of-type(3) p{
+        width: 45%;
+        float: left;
+    }
+    section ul{
+        width: 45%;
+        float: right;
+    }
+    form{
+        width: 70%;
+    }
+}

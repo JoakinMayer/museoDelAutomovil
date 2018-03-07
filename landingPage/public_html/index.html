@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Santiago Urrutia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--FUENTES-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+        <!--HOJA DE ESTILOS-->
+        <link href="estilos.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <div>
+            <div class="portada">
+                <h1>Santiago Urrutia</h1>
+                <img src="img/santiagoUrrutia.png" alt=""/>
+            </div> 
+
+            <section>
+                <h2>Descripcion</h2>
+                <div>
+                    <p>Santiago Urrutia es un piloto de automovilismo de velocidad uruguayo.
+                        Tras su buena participación en algunas categorías europeas y contar con el apoyo de la Ferrari Driver Academy, fue contratado en 2014 por el equipo Koiranende la GP3 Series. Al año siguiente, Urrutia desembarcó en Estados Unidos, donde se consagró campeón de la Pro Mazda Championship con el Team Pelfrey, lo cual le permitió ascender a la Indy Lights y competir con el equipo Schmidt Peterson.
+                        Su actuación en 2015 le valió un reconocimiento por parte de la Federación Internacional del Automóvil, junto con Juan Pablo Montoya y José María López.
+                    </p>
+                </div>
+            </section>
+            <div>
+                <img src="img/urrutia02.jpg" alt=""/>
+            </div>
+            <section>
+                <img id="car" src="img/indiecar.png" alt=""/>
+                <h2>Trayectoria</h2>
+                <table>
+                    <tr>
+                        <th>Temporada</th>
+                        <th>Equipo</th>
+                        <th>Categoria</th>
+                    </tr>
+                    <tr>
+                        <td>2011</td>
+                        <td>Island Motorsport</td>
+                        <td>Fórmula Abarth</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>BVM</td>
+                        <td>Fórmula Abarth</td>
+                    </tr>
+                    <tr>
+                        <td>2013</td>
+                        <td>RP Motorsport</td>
+                        <td>European F3 Open</td>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td>Koiranen GP</td>
+                        <td>GP3 Series</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>Team Pelfrey</td>
+                        <td>Pro Mazda Championship</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Indy Lights</td>
+                        <td>PSchmidt Peterson Motorsports</td>
+                    </tr>
+                </table>
+            </section>
+
+            <video autoplay="autoplay" muted="muted" poster="img/urrutia02.jpg" loop="loop">
+                <source src="img/video.mp4" type="video/mp4">
+            </video> 
+
+            <section>
+                <h2>Conocelo más de cerca</h2>
+                <p>Santiago Urrutia estara dando una charla acerca de su vida, sus objetivos, sus experiencia. Despues de una gran temporada el piloto estara visitandonos para darnos su declaracion de como es correr con pilotos de alto nivel, como es la vida lejos de sus amigo.</p>
+                <ul>
+                    <li>Donde: Museo del Automovil</li>
+                    <li>Cuando: Jueves 13 de Julio de 2017</li>
+                    <li>Hora: 21:00hs</li>
+                </ul>
+            </section>
+
+            <div>
+                <img src="img/santiurrutia.jpg" alt=""/>
+            </div>
+        </div>
+        <section>
+            <a href="../../MusedelAutomovil/public_html/index.html">HOLAA</a>
+            <form>
+                <h3>Consultas</h3>
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" required>
+                <label for="mail">Correo Electronico*</label>
+                <input type="email" id="mail" required>
+                <label>Genero</label>
+                <input type="radio" name="gender" value="mujer"  checked> Mujer
+                <input type="radio" name="gender" value="hombre" > Hombre<br>
+                <label for="departamento">Departamento</label>
+                <select id="departamento">
+                    <option>Artigas</option>
+                    <option>Canelones</option>
+                    <option>Cerro Largo</option>
+                    <option>Colonia</option>
+                    <option>Durazno</option>
+                    <option>Flores</option>
+                    <option>Florida</option>
+                    <option>Lavalleja</option>
+                    <option>Maldonado</option>
+                    <option>Montevideo</option>
+                    <option>Paysandú</option>
+                    <option>Río Negro</option>
+                    <option>Rivera</option>
+                    <option>Rocha</option>
+                    <option>Salto</option>
+                    <option>San José</option>
+                    <option>Soriano</option>
+                    <option>Tacuarembó</option>
+                    <option>Treinta y Tres</option>
+                </select>
+                <p>Comentario*</p>
+                <textarea rows="10" required></textarea>
+                <label for="clave">Clave (Solamente para socios)</label>
+                <input type="password" id="clave" required>
+                <input type="checkbox" id="check"> Enviar una copia de este mensaje a su propio E-mail <br>
+                <input type="submit" value="Enviar" id="btnEnviar">
+            </form>
+        </section>
+    </body>
+</html>

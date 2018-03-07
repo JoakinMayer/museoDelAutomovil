@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Muse de Automoviles - Coleccion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--PLUGIN DE HAMBURGUESA-->
+        <!--http://slicknav.com/-->
+
+        <!--ARCHIVOS JS PLUGINS-->
+        <script src="plugins/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="plugins/pluginmenu/plugin menu hamburguesa/jquery.ultimate-burger-menu.js" type="text/javascript"></script>
+
+
+        <!--CODIGO JS DE PLUGIN-->
+        <script>
+            $(document).ready(function () {
+                $('#nav').burgerMenu({
+                    buttonBg: '#1abc9c',
+                    lineColor: 'white',
+                    menuBackground: '#1abc9c',
+                    linkBackground: '#1abc9c',
+                    linkColor: 'white',
+                    linkBorderBottom: '1px solid white',
+                    showUntilWidth: 767,
+                    position: 'right',
+                    menuBorder: 'none'
+                });
+            });
+        </script>
+
+
+
+        <!--ARCHIVOS DE ESTILOS-->
+        <!--FUENTES-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+
+        <!--ICONOS-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--HOJA DE ESTILO-->
+        <link href="plugins/jInvertScroll/jInvertScroll.css" rel="stylesheet" type="text/css"/>
+        <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="coleccion">
+            <header>
+                <a href="index.html"><img src="logo/logopng_1.png" alt="LOGO"/></a>
+                <nav id="nav">
+
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="coleccion.html" class="activo">Colección</a></li>
+                        <li><a href="informacion.html">Información</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1>La única coleccion  </h1>
+            <p>de autos clasicos</p>
+            <p>de Uruguay</p>
+
+            <div class="horizon scroll">
+                <img src="plugins/jInvertScroll/examples/images/horizon.png" alt="" />
+            </div>
+            <div class="middle scroll">
+                <!--<img src="plugins/jInvertScroll/examples/images/middle.png" alt="" />-->
+            </div>
+            <div class="front scroll">
+                <img src="plugins/jInvertScroll/examples/images/front.png" alt="" />
+            </div>
+
+            <p>Conocelos en el Museo del Automovil</p>
+            <div id="medidor">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                <g><path d="M989.8,563.5c0-267-218-482.7-488.1-483.3c-0.4,0-1.1,0-1.5,0l0,0l0,0C229.4,80.2,10,296.1,10,563.5c0,0.2,0,0.4,0,0.4c0,0.2,0,0.4,0,0.7c0,140,60.4,265.7,156.4,354.1l1.1,1.1l80-80L222.8,815l-55.3,55.3c-34.6-37.6-62.5-78.7-83.1-124.2c-22.7-50.3-35.9-103.7-38.7-158.6H115v-35H45.2c1.3-56.9,13.3-112.2,35.6-164.2C101,341.1,129,298,163.7,260.2l60.6,60.6l12-12l11.6-11.4l0,0l1.1-1.1l-60.8-60.8c39.4-36.7,84.6-66,134.5-86.8c50.7-21.2,104.3-31.3,159.7-33v80.5h35v-80.7c55.3,1.7,109.1,11.6,159.9,33c49.6,20.8,94.7,49.9,134.1,86.6l-61,61l1.1,1.1l0,0l11.6,11.4l12,12l61-61c35,37.8,63,80.9,83.1,128.4c22.3,52.3,34.1,107.4,35.4,164.5h-69.8v35h69.3c-3.1,54.9-16,108.5-38.7,158.6c-20.8,45.5-48.8,86.6-83.3,124.2L776.5,815l-24.7,24.7l80.3,80l5.7-5.5C931.2,826.2,990,702.2,990,564.4c0-0.2,0-0.4,0-0.7C989.8,564,989.8,563.8,989.8,563.5z"/><path id="brujula" d="M465.8,497.3c-2.4,1.7-3.7,3.5-5.2,5.2c-11.8,10.7-19.5,25.8-19.5,42.9c0,32.1,26.5,58.2,58.8,58.2c18.6,0,35-8.5,45.7-21.9c0.9-0.9,2-1.7,2.6-2.6l178-206l-21.9-23.6L465.8,497.3z"/></g>
+                </svg>
+            </div>
+
+            <script src="plugins/jInvertScroll/jquery.jInvertScroll.min.js" type="text/javascript"></script>
+            <script type="text/javascript">
+            (function ($) {
+                $.jInvertScroll(['.scroll'], // an array containing the selector(s) for the elements you want to animate
+                        {
+                            height: 6000, // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+                            onScroll: function (percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                                console.log(percent);
+                            }
+                        });
+            }(jQuery));
+            </script>
+        </div>
+    </body>
+</html>
